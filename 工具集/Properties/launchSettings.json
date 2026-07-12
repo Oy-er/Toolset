@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "工具集 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "工具集 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
