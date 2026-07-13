@@ -28,6 +28,7 @@
         </TitleBar>
 
         <!-- App content -->
-        <Frame x:Name="rootFrame" Grid.Row="1"/>
+        <Frame x:Name="rootFrame" Grid.Row="1"
+               SourcePageType="local:Page1"/>
     </Grid>
 </Window>

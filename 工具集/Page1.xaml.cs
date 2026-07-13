@@ -19,17 +19,13 @@ using Windows.Foundation.Collections;
 namespace 工具集
 {
     /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainWindow : Window
+    public sealed partial class Page1 : Page
     {
-        public MainWindow()
+        public Page1()
         {
             InitializeComponent();
-            // Hide the default system title bar.
-    ExtendsContentIntoTitleBar = true;
-            // Replace system title bar with the WinUI TitleBar.
-            SetTitleBar(AppTitleBar);
         }
     }
 }
