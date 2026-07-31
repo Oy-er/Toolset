@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="工具集.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Spacing="8" MaxWidth="560" HorizontalAlignment="Left">
+        <TextBlock Text="关于" Style="{StaticResource TitleTextBlockStyle}"/>
+        <TextBlock Text="工具集"
+                   Style="{StaticResource SubtitleTextBlockStyle}"/>
+        <TextBlock Text="版本 1.0.0.0"
+                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+        <TextBlock TextWrapping="Wrap"
+                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                   Text="一个用于存放各类实用小工具的集合。当前包含：最大公因数计算、调色盘。"/>
+    </StackPanel>
+</Page>

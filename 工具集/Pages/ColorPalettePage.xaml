@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="工具集.Pages.ColorPalettePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Spacing="12">
+        <TextBlock Text="调色盘" Style="{StaticResource TitleTextBlockStyle}"/>
+        <StackPanel Orientation="Horizontal" Spacing="12">
+            <ColorPicker x:Name="ColorPicker" IsAlphaEnabled="True" Color="SlateBlue"/>
+            <Border x:Name="Preview" Width="120" Height="120"
+                    CornerRadius="8"
+                    Background="SlateBlue"
+                    VerticalAlignment="Top"/>
+        </StackPanel>
+        <TextBlock x:Name="HexText" Style="{StaticResource SubtitleTextBlockStyle}"
+                   IsTextSelectionEnabled="True"/>
+    </StackPanel>
+</Page>

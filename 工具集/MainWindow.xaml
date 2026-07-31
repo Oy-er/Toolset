@@ -28,7 +28,37 @@
         </TitleBar>
 
         <!-- App content -->
-        <Frame x:Name="rootFrame" Grid.Row="1"
-               SourcePageType="local:Page1"/>
+        <NavigationView x:Name="NavView"
+                        Grid.Row="1"
+                        PaneDisplayMode="Left"
+                        IsBackButtonVisible="Collapsed"
+                        SelectionChanged="NavView_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="最大公因数" Tag="GCD">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE94D;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Content="调色盘" Tag="ColorPalette">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE790;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem Content="设置" Tag="Settings">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE713;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Content="关于" Tag="About">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE946;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.FooterMenuItems>
+
+            <Frame x:Name="ContentFrame" Padding="16"/>
+        </NavigationView>
     </Grid>
 </Window>

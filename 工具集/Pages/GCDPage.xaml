@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="工具集.Pages.GCDPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Spacing="12" MaxWidth="480" HorizontalAlignment="Left">
+        <TextBlock Text="最大公因数" Style="{StaticResource TitleTextBlockStyle}"/>
+        <TextBlock Text="输入两个整数，计算它们的最大公因数（GCD）。"
+                   TextWrapping="Wrap"
+                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+        <NumberBox x:Name="NumberA" Header="数字 A" Value="0" SpinButtonPlacementMode="Compact"/>
+        <NumberBox x:Name="NumberB" Header="数字 B" Value="0" SpinButtonPlacementMode="Compact"/>
+        <Button Content="计算" Style="{StaticResource AccentButtonStyle}" Click="Calculate_Click"/>
+        <TextBlock x:Name="ResultText" Style="{StaticResource SubtitleTextBlockStyle}"/>
+    </StackPanel>
+</Page>
