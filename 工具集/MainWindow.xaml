@@ -21,7 +21,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TitleBar x:Name="AppTitleBar"
-              Title="WinUI Notes">
+              Title="工具集">
             <TitleBar.IconSource>
                 <FontIconSource Glyph="&#xF4AA;"/>
             </TitleBar.IconSource>
