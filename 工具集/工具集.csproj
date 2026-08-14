@@ -13,9 +13,6 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="Page1.xaml" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -44,9 +41,6 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Page1.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Update="Pages\GCDPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
