@@ -11,8 +11,5 @@
         <TextBlock Text="设置" Style="{StaticResource TitleTextBlockStyle}"/>
         <ToggleSwitch x:Name="DarkModeToggle" Header="深色模式" OffContent="关" OnContent="开"/>
         <ToggleSwitch x:Name="CompactModeToggle" Header="紧凑模式" OffContent="关" OnContent="开"/>
-        <TextBlock Text="更多设置即将推出。"
-                   Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                   TextWrapping="Wrap"/>
     </StackPanel>
 </Page>
